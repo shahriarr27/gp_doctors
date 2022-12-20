@@ -1,0 +1,84 @@
+.appointments-form {
+    border: 3px solid var(--background-three);
+    padding: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+label.form-title {
+    font-size: 18px;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--text-two);
+    background-color: var(--background-two);
+    padding: 5px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: max-content !important;
+    margin-left: 0;
+}
+
+.submit-button:hover {
+    background-color: var(--background-three);
+}
+
+input, select {
+    height: 40px;
+    width: 100%;
+}
+
+.make-appointments-inner-wrapper, .personal-details-inner-wrapper {
+    margin-top: 20px;
+}
+
+.make-appointments-wrapper h2 {
+    margin-top: 30px;
+}
+
+section.appointments {
+    margin-bottom: 50px;
+}
+
+/* ================================== Tab-Portrait ================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .appointments-form {
+        padding: 20px;
+    }
+
+    input, select {
+        margin-left: 0;
+        width: 400px !important;
+        height: 45px;
+        border: 1px solid var(--background-three);
+    }
+
+    .make-appointments-inner-wrapper, .personal-details-inner-wrapper {
+        margin: 15px;
+    }
+
+    .submit-button {
+        margin-top: 30px;
+    }
+
+    .logo-image img {
+        width: 50%;
+    }
+
+}
+
+/* ================================== Mobile-View ================================== */
+@media (max-width:767px) {
+    .appointments-form {
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+

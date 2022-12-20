@@ -1,0 +1,835 @@
+:root {
+    --text-one: #000000;
+    --text-two: #FFFFFF;
+    --text-three: #242F9B;
+    --text-four: #646FD4;
+    --background-one: #b8c4eb;
+    --background-two: #25adb7;
+    --background-three: #127d8f;
+    --background-four: #8ed4e0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+  
+body {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.practice-info, .our-services, .online-service, .practice-staff, .contact-us {
+    padding-top: 30px;
+}
+
+h2.title {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    color: var(--text-three);
+    font-weight: 700;
+}
+
+h3.sub-title {
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    color: var(--text-four);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3.sub-title.contact-title {
+    font-size: 30px;
+}
+
+p {
+    font-weight: 400;
+    margin: 0;
+    color: var(--text-one);
+}
+
+h6 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title-underline-center {
+    height: 3px;
+    width: 70px;
+    background-color: var(--text-four);
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+input, textarea, select {
+    border: 1px solid var(--background-three);
+    width: 100%;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 18px;
+}
+
+input {
+    height: 40px;
+}
+
+textarea {
+    height: 80px;
+}
+
+input.submit-button {
+    width: max-content !important;
+}
+
+input:focus, textarea:focus,select:focus {
+    border: 1px solid var(--background-three);
+}
+/***************************************************** Header Begin *****************************************************/
+header {
+    border-bottom: 5px solid var(--background-one);
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+  
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    padding: 10px;
+}
+  
+.nav > .nav-btn {
+    display: none;
+}
+
+  
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 15px 13px 15px;
+    text-decoration: none;
+    color: var(--text-one);
+    font-size: 20px;
+}
+
+.nav > .nav-links > a:hover {
+    color: var(--text-three);
+}
+
+.nav > #nav-check {
+    display: none;
+}
+
+.nav-title img {
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/***************************************************** Header End *****************************************************/
+
+/***************************************************** Hero Begin *****************************************************/
+.hero-section {
+    background-image: url('../img/hero/hero-image.jpg'), linear-gradient(rgb(6 6 6 / 75%),rgb(0 0 6 / 62%));
+    background-blend-mode: overlay;
+    background-position: bottom;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+}
+
+.hero {
+    padding: 130px 0;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 60px;
+    color: var(--text-two);
+    font-weight: 800;
+    margin: 0;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-two);
+    margin: 0;
+    padding-top: 25px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.button {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--text-two);
+    background-color: var(--background-two);
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.button a:hover {
+   background-color: var(--background-three);
+}
+/***************************************************** Hero End *****************************************************/
+
+
+/***************************************************** Practice Info Begin *****************************************************/
+.practice-info-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 50px;
+}
+
+.practice-info-bottom-left, .practice-info-bottom-middle, .practice-info-bottom-right {
+    box-shadow: 0px 0px 6px 6px var(--background-four);
+    padding: 30px;
+    width: 50%;
+}
+
+.practice-info-text p {
+    font-size: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-one);
+}
+
+.practice-info-bottom-wrapper p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.practice-info-bottom-wrapper h6 {
+    text-align: center;
+}
+
+.practice-info-bottom-middle li {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+/***************************************************** Practice Info End *****************************************************/
+
+
+/***************************************************** Our Services Begin *****************************************************/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 20px;
+}
+
+.grid-item {
+    border: 2px solid var(--background-two);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.grid-item-image img {
+    width: 100px;
+}
+
+.grid-item-text {
+    padding: 10px 10px 0 10px;
+}
+
+.grid-item-text p, li {
+    font-size: 18px;
+}
+
+.grid-item-text ul {
+    margin: 0;
+    text-align: left;
+    padding-top: 10px;
+}
+/***************************************************** Our Services End *****************************************************/
+
+
+/***************************************************** Online Service Begin *****************************************************/
+.online-service-image img {
+    width: 100%;
+}
+
+.online-service-text p {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.online-service-text ul {
+    padding-top: 40px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.online-service-text li {
+    padding-bottom: 10px;
+}
+
+/***************************************************** Online Service End *****************************************************/
+
+/***************************************************** Practice Staff Begin *****************************************************/
+.practice-staff-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.team {
+    flex: 1;
+    background-color: var(--background-three);
+}
+
+.team h5 {
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 25px;
+    color: var(--text-two);
+}
+
+.member-details {
+    display: flex;
+    gap: 30px;
+    background-color: var(--background-four);
+    margin-bottom: 40px;
+}
+
+.member-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.member-text {
+    width: 70%;
+    text-align: justify;
+    justify-content: center;
+    padding: 30px 30px 30px 0;
+}
+
+p.name {
+    font-size: 35px;
+    margin: 0;
+}
+
+p.post {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.practice-staff-content-wrapper h4 {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.practice-staff-content-wrapper p {
+    font-size: 20px;
+    padding: 20px 0;
+}
+/***************************************************** Practice Staff End *****************************************************/
+
+
+/***************************************************** Contact Us Begin *****************************************************/
+.contact-us-wrapper {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+.contact-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details h3, .comments h3 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.comments {
+    width: 70%;
+}
+
+.social-media-wrapper a {
+    text-decoration: none;
+}
+
+.contact-details svg {
+    width: 30px;
+    margin-right: 30px;
+    fill: var(--background-three);
+}
+
+.contact-details span {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.comments-form {
+    margin-top: 21px;
+}
+
+.mobile, .email {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.submit-button {
+    text-align: center;
+    font-size: 20px;
+    color: var(--text-two);
+    background-color: var(--background-two);
+    padding: 5px 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: var(--background-three);
+}
+
+
+
+
+/***************************************************** Contact Us End *****************************************************/
+
+/***************************************************** Footer Begin *****************************************************/
+footer {
+    border-top: 5px solid var(--background-one);
+    padding: 30px 0;
+}
+
+.footer-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.logo-image img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-logo, .site-map, .quick-links {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-map-wrapper, .quick-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.site-map-wrapper span, .quick-links-wrapper span {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.site-map-wrapper a, .quick-links-wrapper a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--text-three);
+}
+
+.site-map-wrapper a:hover, .quick-links-wrapper a:hover {
+    color: var(--text-four);
+}
+
+.footer-bottom {
+    border-top: 2px solid var(--background-one);
+}
+
+.copyright-text a {
+    text-decoration: none;
+    color: var(--text-three);
+}
+
+.copyright-text {
+    text-align: center;
+    margin-top: 30px;
+}
+/***************************************************** Footer End *****************************************************/
+
+
+
+/* ================================== Tab-Portrait ================================== */
+
+/***************************************************** Header Begin *****************************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .nav > .nav-links > a {
+        padding: 13px 0px 13px 13px;
+        font-size: 15px;
+    }
+/***************************************************** Header End *****************************************************/
+
+
+/***************************************************** Hero Begin *****************************************************/
+    .hero-section {
+        height: 460px;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 25px;
+    }
+/***************************************************** Hero End *****************************************************/
+
+/***************************************************** Practice Info Begin *****************************************************/
+.practice-staff-wrapper {
+    gap: 20px;
+}
+
+.practice-info-bottom-wrapper {
+    display: block;
+}
+
+.practice-info-bottom-left, .practice-info-bottom-middle, .practice-info-bottom-right {
+    width: 100%;
+}
+
+.practice-info-bottom-left, .practice-info-bottom-middle {  
+    margin-bottom: 50px;
+}
+/***************************************************** Practice Info End *****************************************************/
+
+/***************************************************** Our Services Begin *****************************************************/
+
+/***************************************************** Our Services End *****************************************************/
+.grid-container {
+    grid-template-columns: 1fr;
+}
+/***************************************************** Online Service Begin *****************************************************/
+
+/***************************************************** Online Service End *****************************************************/
+
+/***************************************************** Practice Staff Begin *****************************************************/
+.team h5 {
+    font-size: 17px;
+}
+/***************************************************** Practice Staff End*****************************************************/
+
+/***************************************************** Contact Us Begin *****************************************************/
+.contact-us-wrapper {
+    display: block;
+    max-width: 100%;
+}
+
+.contact-details {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.comments {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+/***************************************************** Contact Us End *****************************************************/
+
+/***************************************************** Footer Begin *****************************************************/
+
+.footer-top div {
+    margin-bottom: 20px;
+}
+
+.footer-top {
+    align-items: flex-start;
+}
+
+
+.social-media-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-links-wrapper a {
+    text-align: left;
+}
+/***************************************************** Footer End *****************************************************/
+
+}
+
+
+
+
+/* ================================== Mobile-View ================================== */
+@media (max-width:767px) {
+    h2.title {
+        font-size: 35px ;
+    }
+    
+    h3.sub-title {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 17px !important;
+    }
+
+/***************************************************** Header Begin *****************************************************/
+
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid var(--text-three);
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 111px;
+      left: 0px;
+      z-index: 1;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: auto;
+      overflow-y: auto;
+      background-color: var(--background-one);
+    }
+/***************************************************** Header End *****************************************************/
+
+
+/***************************************************** Hero Begin *****************************************************/
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        max-width: 100%;
+    }
+
+    .hero-section {
+        height: 370px;
+    }
+/***************************************************** Hero End *****************************************************/   
+
+/***************************************************** Practice Info Begin *****************************************************/
+.practice-info-bottom-wrapper {
+    display: block;
+}
+
+/* .practice-info-text p {
+    font-size: 18px;
+} */
+
+.practice-info-bottom-left, .practice-info-bottom-middle, .practice-info-bottom-right {
+    width: 100%;
+}
+
+.practice-info-bottom-left, .practice-info-bottom-middle {
+    margin-bottom: 40px;
+}
+/***************************************************** Practice Info End *****************************************************/
+
+/***************************************************** Our Services Begin *****************************************************/
+.grid-container {
+    grid-template-columns: 1fr;
+}
+
+/***************************************************** Our Services End *****************************************************/
+.online-service-text p {
+    max-width: 100%;
+}
+/***************************************************** Online Service Begin *****************************************************/
+.grid-item-text li {
+    font-size: 17px;
+}
+/***************************************************** Online Service End *****************************************************/
+
+/***************************************************** Practice Staff Begin *****************************************************/
+.practice-staff-wrapper {
+    display: block;
+}
+
+.doctors.team ,.nurses.team {
+    margin-bottom: 20px;
+}
+
+.team h5 {
+    font-size: 20px;
+}
+
+.practice-staff-content-wrapper p {
+    font-size: 15px;
+}
+
+.member-details {
+    display: block;
+}
+
+.member-image, .member-text {
+    width: 100%;
+}
+
+.member-text {
+    padding: 30px;
+}
+/***************************************************** Practice Staff End*****************************************************/
+
+/***************************************************** Contact Us Begin *****************************************************/
+.contact-us-wrapper {
+    display: block;
+    max-width: 100%;
+    padding: 0;
+}
+
+.contact-details, .comments {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.comments {
+    margin-top: 30px;
+}
+
+.contact-details span {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.contact-us {
+    padding-bottom: 30px;
+}
+/***************************************************** Contact Us End *****************************************************/
+
+/***************************************************** Footer Begin *****************************************************/
+.footer-top {
+    display: block;
+}
+
+.site-map-wrapper, .quick-links-wrapper {
+    align-items: center;
+}
+
+.logo-image img {
+    width: 30%;
+}
+
+.site-map-wrapper span, .quick-links-wrapper span {
+    font-size: 20px;
+}
+
+.site-map-wrapper a, .quick-links-wrapper a {
+    font-size: 18px;
+}
+
+.copyright-text span {
+    display: grid;
+    gap: 10px;
+}
+
+.social-media-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo, .site-map {
+    margin-bottom: 20px;
+}
+/***************************************************** Footer End *****************************************************/
+}
+  
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+.Appointments-list-text-wrapper p {
+    font-size: 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.appointments-list h2 {
+    margin-top: 30px;
+}
+
+.appointments-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.appointments-grid-item {
+    border: 2px solid var(--background-two);
+    padding: 20px 20px 0 20px;
+    text-align: center;
+}
+
+.appointment span {
+    display: block;
+    text-align: left;
+    font-size: 17px;
+}
+
+.button {
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+  color: var(--text-two);
+  background-color: var(--background-two);
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--background-three);
+}
+
+/* Set a style for all buttons */
+/* button {
+  color: white;
+  padding: 15px 40px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+} */
+
+button:hover {
+  opacity:1;
+}
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  border-radius: 10px;
+  width: max-content;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #091b1c94;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  max-width: 450px;
+  position: relative;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix {
+  display: block;
+  gap: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix-inner-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+
+/* ================================== Tab-Portrait ================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .appointments-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px !important;
+  }
+
+  .logo-image img {
+    width: 50%;
+  }
+}
+
+/* ================================== Mobile-View ================================== */
+@media (max-width:767px) {
+  .appointments-grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    width: 260px;
+    margin: 20px auto;
+  }
+  
+  .modal-content {
+    width: 70%;
+  }
+  
+}
+
+
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}

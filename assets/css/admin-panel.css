@@ -1,0 +1,193 @@
+/***************************************************** Sidebar Begin *****************************************************/
+.admin-panel {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar-inner-wrapper ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-inner-wrapper li {
+    line-height: 50px;
+    text-align: center;
+}
+
+.sidebar-inner-wrapper li a {
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    width: 100%;
+    color: var(--text-two);
+    padding-left: 30px;
+}
+
+.sidebar-inner-wrapper li:hover a {
+    color: var(--text-two);
+    background-color: #1C0C5B;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #929ac4;
+    height: 100vh;
+}
+
+.admin-panel-logo img {
+    width: 150px;
+}
+
+.admin-panel-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+/***************************************************** Sidebar End *****************************************************/
+
+/***************************************************** Main Begin *****************************************************/
+.main-inner-wrapper {
+    padding: 50px;
+}
+
+.main {
+    width: 80%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    gap: 30px;
+}
+
+.main-grid-item {
+    background-color: var(--background);
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item-top {
+    border-bottom: 1px solid #808080;
+    padding: 10px 30px;
+}
+
+.grid-item-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.grid-item-top span {
+    font-size: 25px;
+    color: var(--title);
+}
+
+.grid-item-bottom span {
+    font-size: 20px;
+    color: var(--sub-title);
+}
+
+.grid-item-bottom {
+    padding: 10px 30px 40px 30px;
+}
+
+.admin-panel-form {
+    border: 3px solid var(--background-three);
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.main-inner-wrapper h2 {
+    margin-bottom: 30px;
+}
+/***************************************************** Main End *****************************************************/
+
+
+
+/***************************************************** Appointments Tab Begin *****************************************************/
+.appointments-list h2 {
+    margin-top: 30px;
+}
+
+.appointments-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.appointments-grid-item {
+    border: 2px solid var(--background-two);
+    padding: 30px;
+    text-align: center;
+}
+
+.appointment span {
+    display: block;
+    text-align: left;
+    margin-bottom: 20px;
+}
+/***************************************************** Appointments Tab End *****************************************************/
+
+
+
+
+
+/* ================================== Mobile-View ================================== */
+@media (max-width:767px) {
+    .main-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar-inner-wrapper ul  {
+        border-top: 1px solid #fff;
+    }
+
+    .sidebar-inner-wrapper ul li a {
+        text-align: center;
+        padding-left: 0;
+    }
+        
+    .admin-panel {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 100%;
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-inner-wrapper {
+        padding: 20px;
+    }
+}
+
+
+/* ================================== Tab-Portrait ================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+    .admin-panel-form {
+        padding: 20px;
+    }
+
+    .main-grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 40%;
+    }
+}
